@@ -21,7 +21,7 @@ public class CarController {
 
 	@GetMapping(value = "/cars")
 	public String printWelcome(@RequestParam(value = "count", required = false, defaultValue = "5") Integer count, ModelMap model) {
-		carsService.setCars();
+
 //		List<String> messages = new ArrayList<>();
 //		messages.add("Hello!");
 //		messages.add("I'm Spring MVC application");

@@ -12,10 +12,13 @@ import java.util.List;
 public class CarDaoImpl implements CarDao {
     private final List<Car> cars= new ArrayList<>();
 
-    public void CarDaoImpl(){
-
+    public CarDaoImpl() {
+        cars.add(new Car("Bugatti", 1, 10));
+        cars.add(new Car("Lamborgini", 2, 5));
+        cars.add(new Car("Porshe", 911, 13));
+        cars.add(new Car("Doge", 28, 20));
+        cars.add(new Car("Lada", 115, 15));
     }
-
 
     @Override
     public List<Car> getCars(int count) {
@@ -25,12 +28,5 @@ public class CarDaoImpl implements CarDao {
         }
         return getCarsList;
     }
-    @Override
-    public void setCars() {
-        cars.add(new Car("Bugatti", 1, 10));
-        cars.add(new Car("Lamborgini", 2, 5));
-        cars.add(new Car("Porshe", 911, 13));
-        cars.add(new Car("Doge", 28, 20));
-        cars.add(new Car("Lada", 115, 15));
-    }
+
 }

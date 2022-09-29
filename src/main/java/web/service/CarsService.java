@@ -8,5 +8,5 @@ import java.util.List;
 public interface CarsService {
        public List<Car> getCars(int count);
 
-       public void setCars();
+
 }

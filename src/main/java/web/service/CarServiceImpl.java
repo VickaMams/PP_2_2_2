@@ -12,12 +12,12 @@ public class CarServiceImpl implements CarsService{
 
     private CarDao carDao =new CarDaoImpl();
 
+    public CarServiceImpl() {
+    }
+
     @Override
     public List<Car> getCars(int count) {
         return carDao.getCars(count);
     }
-    @Override
-    public void setCars(){
-         carDao.setCars();
-    }
+
 }
